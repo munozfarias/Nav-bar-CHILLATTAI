@@ -58,7 +58,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  flex: 0 0 50%;
+  flex: 0 0 47%;
   justify-content: flex-end;
   margin: 0;
   padding: 0;
@@ -101,7 +101,7 @@ body {
 
 /* Bloque inferior: frase alineada a la derecha */
 .phrase-block.bottom {
-  text-align: justify;
+  text-align:right;
   width: 100%;
 }
 
