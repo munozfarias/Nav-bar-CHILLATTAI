@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Barra de Navegación - Videojuegos</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="#">Chillattai Escuela</a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Clases</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="frases-container">
-                <div id="texto1">Piensa al pelear</div>
-                <div id="texto2">Pelea al pensar</div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chillattai Escuela</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <!-- Logo (30%) -->
+      <div class="logo">
+        <a href="#">Chillattai Escuela</a>
+      </div>
+
+      <!-- Enlaces de navegación (50%) -->
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+
+      <!-- Sección de frases dividida en dos bloques (20%) -->
+      <div class="phrases-container">
+        <div class="phrase-block top">
+          <div class="phrase-text">Piensa al pelear</div>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="phrase-block bottom">
+          <div class="phrase-text">Pelea al pensar</div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</body>
 </html>

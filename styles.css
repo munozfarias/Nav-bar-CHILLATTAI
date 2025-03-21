@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'QuickArgani';
+  src: url('font/Quick Argani.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* Navbar con Flexbox */
+.navbar {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo (30% del ancho) */
+.logo {
+  flex: 0 0 30%;
+}
+
+.logo a {
+  font-family: 'QuickArgani', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  color: #ea4f4c;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Enlaces de navegación (50% del ancho) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex: 0 0 50%;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #ff4040, #ff5959);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Sección de frases (20% del ancho) */
+.phrases-container {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Bloque superior: frase alineada a la izquierda */
+.phrase-block.top {
+  text-align: left;
+  width: 100%;
+  padding-left: 10px;
+}
+
+/* Bloque inferior: frase alineada a la derecha */
+.phrase-block.bottom {
+  text-align: justify;
+  width: 100%;
+}
+
+/* Estilos de la frase */
+.phrase-text {
+  font-family: 'QuickArgani', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
